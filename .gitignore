@@ -8,3 +8,7 @@ build/
 .ipynb_checkpoints/
 verify_qa.py
 verify_qa_deep.py
+
+# 재생성 가능한 대용량 캐시 아티팩트 (git에 올리지 않음)
+data/embeddings/chunk_vectors.npy
+graph/offline_graph.pkl

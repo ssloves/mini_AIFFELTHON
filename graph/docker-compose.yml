@@ -1,0 +1,19 @@
+services:
+  neo4j:
+    image: neo4j:5.26-community
+    container_name: legal-graphrag-neo4j
+    ports:
+      - "7474:7474"   # HTTP 브라우저 (http://localhost:7474)
+      - "7687:7687"   # Bolt 드라이버
+    environment:
+      - NEO4J_AUTH=neo4j/neo4jpassword          # .env의 NEO4J_PASSWORD와 일치시킬 것
+      - NEO4J_PLUGINS=["apoc"]
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+      - NEO4J_server_memory_heap_max__size=1G
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+
+volumes:
+  neo4j_data:
+  neo4j_logs:
