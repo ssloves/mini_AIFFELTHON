@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+*.egg-info/
+dist/
+build/
+.ipynb_checkpoints/
+verify_qa.py
+verify_qa_deep.py
