@@ -1,0 +1,1599 @@
+{
+  "n_items": 78,
+  "n_with_required": 42,
+  "overall": {
+    "path_recall": 0.698,
+    "coincidence": 0.031,
+    "conn_precision": 0.984
+  },
+  "by_origin": {
+    "generated": {
+      "n": 25,
+      "path_recall": 0.72,
+      "coincidence": 0.0
+    },
+    "held_out": {
+      "n": 17,
+      "path_recall": 0.667,
+      "coincidence": 0.077
+    }
+  },
+  "faithfulness": {
+    "reached_full": 29,
+    "fully_faithful": 28,
+    "coincident_ids": [
+      25
+    ]
+  },
+  "sat_edge_types": {
+    "CONFLICTS_WITH": 35,
+    "DEFINES/MENTIONS→Concept←DEFINES": 7
+  },
+  "rows": [
+    {
+      "id": 1,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 11,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 2,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 1,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 1,
+      "path_recall": 0.0,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 4,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "MISSED"
+      }
+    },
+    {
+      "id": 3,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 5,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "고보령_제3조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 4,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 5,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1,
+        "DEFINES/MENTIONS→Concept←DEFINES": 1
+      },
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 5,
+      "type": "일반",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "multihop",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 9,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 6,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 11,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 7,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 4,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "조특령_제26조의8|지침_p36": "SATISFIED"
+      }
+    },
+    {
+      "id": 8,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 4,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "조특령_제26조의8|지침_p36": "SATISFIED"
+      }
+    },
+    {
+      "id": 9,
+      "type": "동명무충돌",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 5,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "고보령_제3조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 10,
+      "type": "일반",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "multihop",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 5,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 11,
+      "type": "동명무충돌",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 1,
+      "path_recall": 0.0,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 7,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {
+        "고보령_제3조|조특령_제26조의8": "MISSED"
+      }
+    },
+    {
+      "id": 12,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 17,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 13,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 6,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 14,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 5,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 15,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 0,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 16,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 4,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 17,
+      "type": "일반",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 8,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 18,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 5,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1,
+        "DEFINES/MENTIONS→Concept←DEFINES": 1
+      },
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 19,
+      "type": "동명무충돌",
+      "hop": 3,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 3,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 2,
+      "path_recall": 0.3333333333333333,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 4,
+      "node_recall_full": false,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "고보령_제3조|지침_p36": "MISSED",
+        "고보령_제3조|조특령_제26조의8": "MISSED",
+        "조특령_제26조의8|지침_p36": "SATISFIED"
+      }
+    },
+    {
+      "id": 20,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "multihop",
+      "n_required": 1,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 1,
+      "path_recall": 0.0,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 5,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {
+        "고보령_제3조|조특령_제26조의8": "MISSED"
+      }
+    },
+    {
+      "id": 21,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 13,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1,
+        "DEFINES/MENTIONS→Concept←DEFINES": 1
+      },
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 22,
+      "type": "단일정밀",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "multihop",
+      "n_required": 1,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 1,
+      "path_recall": 0.0,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 13,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {
+        "조특령_제26조의8|조특법_제29조의8": "MISSED"
+      }
+    },
+    {
+      "id": 23,
+      "type": "동명무충돌",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 3,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "고보령_제3조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 24,
+      "type": "동명무충돌",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 4,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "고보령_제3조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 25,
+      "type": "용도상이",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 0,
+      "coincident": 1,
+      "missed": 0,
+      "path_recall": 0.0,
+      "coincidence": 1.0,
+      "conn_precision": null,
+      "spurious_links": 7,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {
+        "고보령_제12조|고보령_제3조": "COINCIDENT"
+      }
+    },
+    {
+      "id": 26,
+      "type": "용도상이",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 5,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "조특령_제26조의8|지침_p36": "SATISFIED"
+      }
+    },
+    {
+      "id": 27,
+      "type": "용도상이",
+      "hop": 2,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 3,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 28,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "multihop",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 6,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 29,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 7,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 30,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 2,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 31,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 6,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 32,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 3,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 33,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 12,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 34,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 2,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 35,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 8,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 36,
+      "type": "무응답",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 6,
+      "node_recall_full": null,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 37,
+      "type": "무응답",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 2,
+      "node_recall_full": null,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 38,
+      "type": "무응답",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 1,
+      "node_recall_full": null,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 39,
+      "type": "무응답",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 6,
+      "node_recall_full": null,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 40,
+      "type": "무응답",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 0,
+      "node_recall_full": null,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 41,
+      "type": "무응답",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 7,
+      "node_recall_full": null,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 42,
+      "type": "무응답",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 2,
+      "node_recall_full": null,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 43,
+      "type": "무응답",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 0,
+      "node_recall_full": null,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 44,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "multihop",
+      "n_required": 1,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 1,
+      "path_recall": 0.0,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 4,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {
+        "조특령_제26조의8|조특법_제29조의8": "MISSED"
+      }
+    },
+    {
+      "id": 45,
+      "type": "문서간충돌",
+      "hop": 3,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 2,
+      "satisfied": 2,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 3,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 2,
+        "DEFINES/MENTIONS→Concept←DEFINES": 1
+      },
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "SATISFIED",
+        "고보령_제3조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 46,
+      "type": "문서간충돌",
+      "hop": 3,
+      "origin": "generated",
+      "route": "multihop",
+      "n_required": 2,
+      "satisfied": 2,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 3,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 2
+      },
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "SATISFIED",
+        "고보령_제3조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 47,
+      "type": "문서간충돌",
+      "hop": 3,
+      "origin": "generated",
+      "route": "multihop",
+      "n_required": 2,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 1,
+      "path_recall": 0.5,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 6,
+      "node_recall_full": false,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "SATISFIED",
+        "고보령_제3조|조특령_제26조의8": "MISSED"
+      }
+    },
+    {
+      "id": 48,
+      "type": "문서간충돌",
+      "hop": 3,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 2,
+      "satisfied": 2,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 1,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 2
+      },
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "SATISFIED",
+        "조특령_제26조의8|지침_p36": "SATISFIED"
+      }
+    },
+    {
+      "id": 49,
+      "type": "문서간충돌",
+      "hop": 3,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 2,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 1,
+      "path_recall": 0.5,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 5,
+      "node_recall_full": false,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1,
+        "DEFINES/MENTIONS→Concept←DEFINES": 1
+      },
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "SATISFIED",
+        "고보령_제3조|조특령_제26조의8": "MISSED"
+      }
+    },
+    {
+      "id": 50,
+      "type": "문서간충돌",
+      "hop": 3,
+      "origin": "generated",
+      "route": "multihop",
+      "n_required": 2,
+      "satisfied": 2,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 3,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 2
+      },
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "SATISFIED",
+        "고보령_제3조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 51,
+      "type": "문서간충돌",
+      "hop": 3,
+      "origin": "generated",
+      "route": "multihop",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 0.5,
+      "spurious_links": 4,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "고보령_제3조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 52,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "multihop",
+      "n_required": 1,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 1,
+      "path_recall": 0.0,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 5,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {
+        "조특령_제26조의8|조특법_제29조의8": "MISSED"
+      }
+    },
+    {
+      "id": 53,
+      "type": "문서간충돌",
+      "hop": 1,
+      "origin": "generated",
+      "route": "multihop",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 5,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 54,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 1,
+      "path_recall": 0.0,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 6,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {
+        "조특령_제26조의8|조특법_제29조의8": "MISSED"
+      }
+    },
+    {
+      "id": 55,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 8,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1,
+        "DEFINES/MENTIONS→Concept←DEFINES": 1
+      },
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 56,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 6,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "고보령_제12조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 57,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 5,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "고보령_제3조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 58,
+      "type": "동명무충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "multihop",
+      "n_required": 1,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 1,
+      "path_recall": 0.0,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 6,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {
+        "조특령_제26조의8|조특법_제29조의8": "MISSED"
+      }
+    },
+    {
+      "id": 59,
+      "type": "동명무충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "multihop",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 3,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "고보령_제3조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 60,
+      "type": "동명무충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 1,
+      "path_recall": 0.0,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 0,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {
+        "고보령_제3조|조특령_제26조의8": "MISSED"
+      }
+    },
+    {
+      "id": 61,
+      "type": "동명무충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "multihop",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 5,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "고보령_제3조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 62,
+      "type": "동명무충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 8,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 63,
+      "type": "용도상이",
+      "hop": 2,
+      "origin": "generated",
+      "route": "simple",
+      "n_required": 1,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 1,
+      "path_recall": 0.0,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 5,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {
+        "고보령_제12조|근기령_제7조의2": "MISSED"
+      }
+    },
+    {
+      "id": 64,
+      "type": "용도상이",
+      "hop": 2,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 8,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1,
+        "DEFINES/MENTIONS→Concept←DEFINES": 1
+      },
+      "detail": {
+        "고보령_제12조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 65,
+      "type": "용도상이",
+      "hop": 2,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 2,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "고보령_제3조|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 66,
+      "type": "일반",
+      "hop": 1,
+      "origin": "generated",
+      "route": "multihop",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 6,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 67,
+      "type": "일반",
+      "hop": 1,
+      "origin": "generated",
+      "route": "multihop",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 2,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 68,
+      "type": "일반",
+      "hop": 1,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 10,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 69,
+      "type": "일반",
+      "hop": 1,
+      "origin": "generated",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 2,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 70,
+      "type": "일반",
+      "hop": 1,
+      "origin": "generated",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 5,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 71,
+      "type": "일반",
+      "hop": 1,
+      "origin": "generated",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 3,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 72,
+      "type": "일반",
+      "hop": 1,
+      "origin": "generated",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 2,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 73,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 11,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "근기령_제7조의2|조특령_제26조의8": "SATISFIED"
+      }
+    },
+    {
+      "id": 74,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 4,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "조특령_제26조의8|지침_p36": "SATISFIED"
+      }
+    },
+    {
+      "id": 75,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "multihop",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 4,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "조특령_제26조의8|지침_p36": "SATISFIED"
+      }
+    },
+    {
+      "id": 76,
+      "type": "문서간충돌",
+      "hop": 2,
+      "origin": "generated",
+      "route": "conflict",
+      "n_required": 1,
+      "satisfied": 1,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": 1.0,
+      "coincidence": 0.0,
+      "conn_precision": 1.0,
+      "spurious_links": 4,
+      "node_recall_full": true,
+      "sat_edge_types": {
+        "CONFLICTS_WITH": 1
+      },
+      "detail": {
+        "조특령_제26조의8|지침_p25": "SATISFIED"
+      }
+    },
+    {
+      "id": 77,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "simple",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 4,
+      "node_recall_full": false,
+      "sat_edge_types": {},
+      "detail": {}
+    },
+    {
+      "id": 78,
+      "type": "단일정밀",
+      "hop": 1,
+      "origin": "held_out",
+      "route": "conflict",
+      "n_required": 0,
+      "satisfied": 0,
+      "coincident": 0,
+      "missed": 0,
+      "path_recall": null,
+      "coincidence": null,
+      "conn_precision": null,
+      "spurious_links": 10,
+      "node_recall_full": true,
+      "sat_edge_types": {},
+      "detail": {}
+    }
+  ]
+}

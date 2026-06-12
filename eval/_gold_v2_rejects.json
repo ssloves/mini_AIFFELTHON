@@ -1,0 +1,194 @@
+{
+  "gate_rejected": [
+    {
+      "src": "팀원3.md#23",
+      "gate_passed": [
+        "G1",
+        "G2",
+        "G6"
+      ],
+      "detail": {
+        "G1": {
+          "resolved": [
+            "조특령_제26조의8_제5-8항",
+            "근기령_제7조의2_제1-2항"
+          ],
+          "missing": []
+        },
+        "G2": {
+          "checked": 0
+        },
+        "G3": {
+          "mode": "answerable",
+          "derivable": false,
+          "score": 0
+        },
+        "G6": {
+          "origin": "held_out"
+        }
+      }
+    },
+    {
+      "src": "팀원3.md#35",
+      "gate_passed": [
+        "G1",
+        "G6"
+      ],
+      "detail": {
+        "G1": {
+          "resolved": [
+            "고보령_제3조_제1-3항",
+            "고보령_제3조_제1-3항",
+            "조특령_제26조의8_제1-2항"
+          ],
+          "missing": []
+        },
+        "G2": {
+          "ungrounded": [
+            "50시간"
+          ],
+          "checked": 3
+        },
+        "G3": {
+          "mode": "answerable",
+          "derivable": false,
+          "score": 0
+        },
+        "G6": {
+          "origin": "held_out"
+        }
+      }
+    },
+    {
+      "src": "팀원4.md#50",
+      "gate_passed": [
+        "G1",
+        "G2",
+        "G6"
+      ],
+      "detail": {
+        "G1": {
+          "resolved": [
+            "조특령_제26조의8_제3-4항"
+          ],
+          "missing": []
+        },
+        "G2": {
+          "ungrounded": [],
+          "checked": 4
+        },
+        "G3": {
+          "mode": "answerable",
+          "derivable": false,
+          "score": 0
+        },
+        "G6": {
+          "origin": "held_out"
+        }
+      }
+    },
+    {
+      "src": "팀원4.md#56",
+      "gate_passed": [
+        "G1",
+        "G2",
+        "G6"
+      ],
+      "detail": {
+        "G1": {
+          "resolved": [
+            "고보령_제3조_제1-3항",
+            "고보령_제3조_제1-3항",
+            "조특령_제26조의8_제1-2항"
+          ],
+          "missing": []
+        },
+        "G2": {
+          "ungrounded": [],
+          "checked": 2
+        },
+        "G3": {
+          "mode": "answerable",
+          "derivable": false,
+          "score": 0
+        },
+        "G6": {
+          "origin": "held_out"
+        }
+      }
+    }
+  ],
+  "dedup_dropped": [
+    {
+      "uid": 75,
+      "dup_of": 29
+    }
+  ],
+  "distribution_trimmed": [
+    {
+      "src": "팀원4.md#52",
+      "type": "단일정밀",
+      "reason": "분포상한/하드캡 초과"
+    },
+    {
+      "src": "팀원4.md#53",
+      "type": "단일정밀",
+      "reason": "분포상한/하드캡 초과"
+    },
+    {
+      "src": "팀원4.md#54",
+      "type": "단일정밀",
+      "reason": "분포상한/하드캡 초과"
+    },
+    {
+      "src": "팀원4.md#55",
+      "type": "단일정밀",
+      "reason": "분포상한/하드캡 초과"
+    },
+    {
+      "src": "팀원4.md#58",
+      "type": "단일정밀",
+      "reason": "분포상한/하드캡 초과"
+    },
+    {
+      "src": "팀원4.md#44",
+      "type": "무응답",
+      "reason": "분포상한/하드캡 초과"
+    },
+    {
+      "src": "팀원4.md#45",
+      "type": "무응답",
+      "reason": "분포상한/하드캡 초과"
+    },
+    {
+      "src": "팀원4.md#46",
+      "type": "무응답",
+      "reason": "분포상한/하드캡 초과"
+    },
+    {
+      "src": "팀원2#H2",
+      "type": "문서간충돌",
+      "reason": "분포상한/하드캡 초과"
+    },
+    {
+      "src": "팀원2#H5",
+      "type": "문서간충돌",
+      "reason": "분포상한/하드캡 초과"
+    },
+    {
+      "src": "팀원2#H11",
+      "type": "문서간충돌",
+      "reason": "분포상한/하드캡 초과"
+    },
+    {
+      "src": "track1_single#조특령_제26조의8_제5-8항",
+      "type": "단일정밀",
+      "reason": "분포상한/하드캡 초과"
+    },
+    {
+      "src": "track1_single#고보령_제12조_제3-5항",
+      "type": "단일정밀",
+      "reason": "분포상한/하드캡 초과"
+    }
+  ]
+}

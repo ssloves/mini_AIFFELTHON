@@ -1,0 +1,3775 @@
+{
+  "per_item": [
+    {
+      "id": 1,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 2,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "근로기준법시행령 제7조의2",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.5,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 0.5,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 0.5,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 0.5,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 0.5,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 3,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 4,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "근로기준법시행령 제7조의2",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 5,
+      "type": "일반",
+      "hop": 1,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": true,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 6,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 7,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "장려금지침 *",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.7,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.5,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 8,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "장려금지침 *",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.5,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.5,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.5,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 9,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 10,
+      "type": "일반",
+      "hop": 1,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.2,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 11,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.5,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 12,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "장려금지침 *"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 11
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 13,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 14,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제40조"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 15,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 7
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 7
+      },
+      "verdict_B4": "REJECT",
+      "retries_B4": 3
+    },
+    {
+      "id": 16,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "근로기준법시행령 제7조의2"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 17,
+      "type": "일반",
+      "hop": 1,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "장려금지침 *"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 18,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "근로기준법시행령 제7조의2",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 1
+    },
+    {
+      "id": 19,
+      "type": "동명무충돌",
+      "hop": 3,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "장려금지침 *",
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.333,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.333,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.333,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B4": {
+        "recall": 0.667,
+        "acc": 0.5,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 20,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 21,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "근로기준법시행령 제7조의2",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.5,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.5,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 22,
+      "type": "단일정밀",
+      "hop": 2,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8",
+        "조특법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.5,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.5,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.5,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.5,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 23,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.5,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.5,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.5,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 24,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 25,
+      "type": "용도상이",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "고용보험법시행령 제12조"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 26,
+      "type": "용도상이",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "장려금지침 *",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.5,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 27,
+      "type": "용도상이",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "근로기준법시행령 제7조의2",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 28,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 29,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 30,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "근로기준법시행령 제7조의2"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 31,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 32,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 10
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 10
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 14
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 10
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 10
+      },
+      "verdict_B4": "REJECT",
+      "retries_B4": 3
+    },
+    {
+      "id": 33,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 34,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 35,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": true,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 36,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "answerable": false,
+      "gold_tokens": [],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 16
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 37,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "answerable": false,
+      "gold_tokens": [],
+      "B0": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 38,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "answerable": false,
+      "gold_tokens": [],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 16
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "verdict_B4": "REJECT",
+      "retries_B4": 3
+    },
+    {
+      "id": 39,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "answerable": false,
+      "gold_tokens": [],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 10
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 40,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "answerable": false,
+      "gold_tokens": [],
+      "B0": {
+        "recall": 1.0,
+        "acc": 0.9,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 4
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 4
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 41,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "answerable": false,
+      "gold_tokens": [],
+      "B0": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 42,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "answerable": false,
+      "gold_tokens": [],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 10
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 10
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 18
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 10
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 10
+      },
+      "verdict_B4": "REJECT",
+      "retries_B4": 3
+    },
+    {
+      "id": 43,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "answerable": false,
+      "gold_tokens": [],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 16
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 7
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 7
+      },
+      "verdict_B4": "REJECT",
+      "retries_B4": 3
+    },
+    {
+      "id": 44,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8",
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.5,
+        "acc": 0.8,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 45,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "근기령_ 제7조의2",
+        "고보령_ 제3조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.333,
+        "acc": 0.8,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.333,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 46,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8",
+        "근로기준법시행령 제7조의2"
+      ],
+      "B0": {
+        "recall": 0.333,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.333,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.333,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 47,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "근로기준법시행령 제7조의2",
+        "조특법시행령 제26조의8",
+        "고용보험법시행령 제3조"
+      ],
+      "B0": {
+        "recall": 0.667,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.667,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.667,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.667,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 48,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "근로기준법시행령 제7조의2",
+        "조특법시행령 제26조의8",
+        "장려금지침 *"
+      ],
+      "B0": {
+        "recall": 0.667,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.667,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.667,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 49,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "근로기준법시행령 제7조의2",
+        "조특법시행령 제26조의8",
+        "고용보험법시행령 제3조"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B3": {
+        "recall": 0.667,
+        "acc": 0.5,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.667,
+        "acc": 0.8,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 50,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8",
+        "근로기준법시행령 제7조의2"
+      ],
+      "B0": {
+        "recall": 0.667,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.667,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.667,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 51,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "장려금지침 *",
+        "조특법시행령 제26조의8",
+        "고용보험법시행령 제3조"
+      ],
+      "B0": {
+        "recall": 0.333,
+        "acc": 0.4,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.333,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.333,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B3": {
+        "recall": 0.333,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 52,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8",
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 16
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.3,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.3,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 1
+    },
+    {
+      "id": 53,
+      "type": "문서간충돌",
+      "hop": 1,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 54,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8",
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 16
+      },
+      "B4": {
+        "recall": 0.5,
+        "acc": 0.8,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 55,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "근로기준법시행령 제7조의2",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 56,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제12조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.5,
+        "acc": 0.8,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 57,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.5,
+        "acc": 0.8,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.8,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 58,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8",
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.5,
+        "acc": 1.0,
+        "flag": true,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 59,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 11
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 11
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 15
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 5
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 11
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 60,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 61,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.8,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 62,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "근로기준법시행령 제7조의2",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 20
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.7,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 63,
+      "type": "용도상이",
+      "hop": 2,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제12조",
+        "근로기준법시행령 제7조의2"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 0.5,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 0.5,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 64,
+      "type": "용도상이",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제12조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.5,
+        "acc": 0.3,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 65,
+      "type": "용도상이",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제3조",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 9
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 9
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 17
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 9
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 66,
+      "type": "일반",
+      "hop": 1,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 67,
+      "type": "일반",
+      "hop": 1,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 16
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.7,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 16
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 1
+    },
+    {
+      "id": 68,
+      "type": "일반",
+      "hop": 1,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 16
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 16
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 69,
+      "type": "일반",
+      "hop": 1,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 16
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 70,
+      "type": "일반",
+      "hop": 1,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 10
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 10
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 18
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 10
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 10
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 2
+    },
+    {
+      "id": 71,
+      "type": "일반",
+      "hop": 1,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "조세특례제한법 제29조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 10
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 10
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 10
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 10
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 10
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 1
+    },
+    {
+      "id": 72,
+      "type": "일반",
+      "hop": 1,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "고용보험법시행령 제12조"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 73,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "근로기준법시행령 제7조의2",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 16
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 74,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "장려금지침 *",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 75,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "multihop",
+      "answerable": true,
+      "gold_tokens": [
+        "장려금지침 *",
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.5,
+        "acc": 0.7,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 76,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8",
+        "장려금지침 *"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 0.5,
+        "acc": 0.5,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 0.8,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 77,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 0.0,
+        "acc": 0.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 8
+      },
+      "B1": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B2": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 8
+      },
+      "B3": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "B4": {
+        "recall": 0.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 6
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    },
+    {
+      "id": 78,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "answerable": true,
+      "gold_tokens": [
+        "조특법시행령 제26조의8"
+      ],
+      "B0": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B1": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B2": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": false,
+        "jc": false,
+        "ctx_n": 12
+      },
+      "B3": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "B4": {
+        "recall": 1.0,
+        "acc": 1.0,
+        "flag": true,
+        "jc": true,
+        "ctx_n": 12
+      },
+      "verdict_B4": "ACCEPT",
+      "retries_B4": 0
+    }
+  ],
+  "aggregate": {
+    "n_items": 78,
+    "recall_overall": {
+      "B0": 0.436,
+      "B1": 0.436,
+      "B2": 0.436,
+      "B3": 0.348,
+      "B4": 0.669
+    },
+    "recall_by_hop": {
+      "1": {
+        "B0": 0.393,
+        "B1": 0.393,
+        "B2": 0.393,
+        "B3": 0.393,
+        "B4": 0.429
+      },
+      "2": {
+        "B0": 0.456,
+        "B1": 0.456,
+        "B2": 0.456,
+        "B3": 0.353,
+        "B4": 0.838
+      },
+      "3": {
+        "B0": 0.5,
+        "B1": 0.5,
+        "B2": 0.5,
+        "B3": 0.167,
+        "B4": 0.792
+      }
+    },
+    "accuracy_overall": {
+      "B0": 0.494,
+      "B1": 0.629,
+      "B2": 0.647,
+      "B3": 0.561,
+      "B4": 0.686
+    },
+    "conflict_detect_crossdoc7_flag_and_judge": {
+      "B0": 0.0,
+      "B1": 0.0,
+      "B2": 0.0,
+      "B3": 0.346,
+      "B4": 0.962
+    },
+    "conflict_detect_crossdoc7_judge_only": {
+      "B0": 0.846,
+      "B1": 0.962,
+      "B2": 1.0,
+      "B3": 0.846,
+      "B4": 1.0
+    },
+    "false_alarm_distractor6_flag": {
+      "B0": 0.0,
+      "B1": 0.0,
+      "B2": 0.0,
+      "B3": 0.25,
+      "B4": 0.875
+    },
+    "decomposition": {
+      "검색_순수기여_RecallB4-RecallB0": 0.233,
+      "검색_순수기여_RecallB3-RecallB0": -0.088,
+      "프롬프트_기여_AccB1-AccB0": 0.135,
+      "재시도_기여_AccB2-AccB1": 0.018,
+      "그래프_기여_AccB3-AccB2": -0.086,
+      "충돌앵커_기여_AccB4-AccB3": 0.125,
+      "충돌앵커_기여_RecallB4-RecallB3": 0.321,
+      "충돌앵커_기여_충돌감지B4-B3": 0.616
+    }
+  }
+}

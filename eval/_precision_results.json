@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 2,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 0.6666666666666666,
+    "g_new": 0.3333333333333333,
+    "n_old": 0.6666666666666666,
+    "n_new": 0.3333333333333333,
+    "has_jishim": false
+  },
+  {
+    "id": 3,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 4,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 0.6666666666666666,
+    "has_jishim": false
+  },
+  {
+    "id": 5,
+    "type": "일반",
+    "hop": 1,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 6,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 0.5,
+    "has_jishim": false
+  },
+  {
+    "id": 7,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 0.0,
+    "has_jishim": true
+  },
+  {
+    "id": 8,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.5,
+    "n_new": 0.0,
+    "has_jishim": true
+  },
+  {
+    "id": 9,
+    "type": "동명무충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 10,
+    "type": "일반",
+    "hop": 1,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 1.0,
+    "n_new": 0.5,
+    "has_jishim": false
+  },
+  {
+    "id": 11,
+    "type": "동명무충돌",
+    "hop": 2,
+    "g_old": 0.5,
+    "g_new": 0.5,
+    "n_old": 0.5,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 12,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 0.0,
+    "n_old": 1.0,
+    "n_new": 0.0,
+    "has_jishim": true
+  },
+  {
+    "id": 13,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 14,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  },
+  {
+    "id": 15,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 16,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  },
+  {
+    "id": 17,
+    "type": "일반",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 0.0,
+    "n_old": 1.0,
+    "n_new": 0.0,
+    "has_jishim": true
+  },
+  {
+    "id": 18,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 19,
+    "type": "동명무충돌",
+    "hop": 3,
+    "g_old": 0.6666666666666666,
+    "g_new": 0.6666666666666666,
+    "n_old": 0.3333333333333333,
+    "n_new": 0.0,
+    "has_jishim": true
+  },
+  {
+    "id": 20,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 0.5,
+    "g_new": 0.5,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 21,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 0.5,
+    "n_old": 0.5,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 22,
+    "type": "단일정밀",
+    "hop": 2,
+    "g_old": 0.5,
+    "g_new": 0.5,
+    "n_old": 0.5,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 23,
+    "type": "동명무충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.5,
+    "n_new": 0.5,
+    "has_jishim": false
+  },
+  {
+    "id": 24,
+    "type": "동명무충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 25,
+    "type": "용도상이",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  },
+  {
+    "id": 26,
+    "type": "용도상이",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.5,
+    "n_new": 0.0,
+    "has_jishim": true
+  },
+  {
+    "id": 27,
+    "type": "용도상이",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  },
+  {
+    "id": 28,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  },
+  {
+    "id": 29,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  },
+  {
+    "id": 30,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  },
+  {
+    "id": 31,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 32,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 33,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  },
+  {
+    "id": 34,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 35,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  },
+  {
+    "id": 44,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 0.3333333333333333,
+    "g_new": 0.3333333333333333,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 45,
+    "type": "문서간충돌",
+    "hop": 3,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.6666666666666666,
+    "n_new": 0.6666666666666666,
+    "has_jishim": false
+  },
+  {
+    "id": 46,
+    "type": "문서간충돌",
+    "hop": 3,
+    "g_old": 1.0,
+    "g_new": 0.6666666666666666,
+    "n_old": 0.3333333333333333,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 47,
+    "type": "문서간충돌",
+    "hop": 3,
+    "g_old": 0.6666666666666666,
+    "g_new": 0.3333333333333333,
+    "n_old": 0.6666666666666666,
+    "n_new": 0.6666666666666666,
+    "has_jishim": false
+  },
+  {
+    "id": 48,
+    "type": "문서간충돌",
+    "hop": 3,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.6666666666666666,
+    "n_new": 0.3333333333333333,
+    "has_jishim": true
+  },
+  {
+    "id": 49,
+    "type": "문서간충돌",
+    "hop": 3,
+    "g_old": 0.6666666666666666,
+    "g_new": 0.6666666666666666,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  },
+  {
+    "id": 50,
+    "type": "문서간충돌",
+    "hop": 3,
+    "g_old": 1.0,
+    "g_new": 0.6666666666666666,
+    "n_old": 0.6666666666666666,
+    "n_new": 0.6666666666666666,
+    "has_jishim": false
+  },
+  {
+    "id": 51,
+    "type": "문서간충돌",
+    "hop": 3,
+    "g_old": 1.0,
+    "g_new": 0.6666666666666666,
+    "n_old": 0.3333333333333333,
+    "n_new": 0.0,
+    "has_jishim": true
+  },
+  {
+    "id": 52,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 0.5,
+    "g_new": 0.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 53,
+    "type": "문서간충돌",
+    "hop": 1,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 54,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 0.5,
+    "g_new": 0.5,
+    "n_old": 0.5,
+    "n_new": 0.5,
+    "has_jishim": false
+  },
+  {
+    "id": 55,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 0.6666666666666666,
+    "has_jishim": false
+  },
+  {
+    "id": 56,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 57,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  },
+  {
+    "id": 58,
+    "type": "동명무충돌",
+    "hop": 2,
+    "g_old": 0.5,
+    "g_new": 0.5,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 59,
+    "type": "동명무충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 60,
+    "type": "동명무충돌",
+    "hop": 2,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 61,
+    "type": "동명무충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 62,
+    "type": "동명무충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 0.5,
+    "has_jishim": false
+  },
+  {
+    "id": 63,
+    "type": "용도상이",
+    "hop": 2,
+    "g_old": 0.5,
+    "g_new": 0.5,
+    "n_old": 1.0,
+    "n_new": 0.5,
+    "has_jishim": false
+  },
+  {
+    "id": 64,
+    "type": "용도상이",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.5,
+    "n_new": 0.5,
+    "has_jishim": false
+  },
+  {
+    "id": 65,
+    "type": "용도상이",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 66,
+    "type": "일반",
+    "hop": 1,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 67,
+    "type": "일반",
+    "hop": 1,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 68,
+    "type": "일반",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  },
+  {
+    "id": 69,
+    "type": "일반",
+    "hop": 1,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 1.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 70,
+    "type": "일반",
+    "hop": 1,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 71,
+    "type": "일반",
+    "hop": 1,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  },
+  {
+    "id": 72,
+    "type": "일반",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 73,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 0.5,
+    "n_old": 1.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 74,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": true
+  },
+  {
+    "id": 75,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 0.5,
+    "n_new": 0.0,
+    "has_jishim": true
+  },
+  {
+    "id": 76,
+    "type": "문서간충돌",
+    "hop": 2,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 0.0,
+    "has_jishim": true
+  },
+  {
+    "id": 77,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 0.0,
+    "g_new": 0.0,
+    "n_old": 0.0,
+    "n_new": 0.0,
+    "has_jishim": false
+  },
+  {
+    "id": 78,
+    "type": "단일정밀",
+    "hop": 1,
+    "g_old": 1.0,
+    "g_new": 1.0,
+    "n_old": 1.0,
+    "n_new": 1.0,
+    "has_jishim": false
+  }
+]

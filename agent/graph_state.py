@@ -30,6 +30,7 @@ class AgentState(TypedDict, total=False):
     context: list[dict]           # 최종 컨텍스트 청크(재랭킹 후)
     conflicts: list[dict]         # 수집된 CONFLICTS_WITH [{a,b,axis,note,verified}]
     expanded_via: dict            # {edge_type: count}
+    paths: list[dict]             # node→edge→node 경로 트리플(관찰가능성, 점수 불변)
 
     # Reasoner 산출
     answer: str

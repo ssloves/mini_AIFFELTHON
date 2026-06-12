@@ -27,12 +27,25 @@ import nodes  # noqa: E402  (기존 모듈 — 수정 안 함)
 from app import run  # noqa: E402
 from run_eval import baseline_context  # noqa: E402
 
-GOLD = ROOT / "eval" / "gold_set_원본.jsonl"
+GOLD = ROOT / "eval" / "gold_set_final.json"
 OUT = ROOT / "eval" / "_exp_results.json"
 
-CROSS_DOC_CONFLICT = {1, 2, 3, 7, 8, 10, 11}
-SINGLE_DOC_CONFLICT = {4, 5, 6, 9, 12}
-DISTRACTOR = {13, 14, 15, 16, 17, 18}
+
+def load_items():
+    """gold_set_final.json(dict) / 구 JSONL 둘 다 로드."""
+    txt = GOLD.read_text(encoding="utf-8")
+    raw = json.loads(txt) if txt.lstrip().startswith("{") else None
+    if isinstance(raw, dict):
+        return raw.get("items", [])
+    return [json.loads(l) for l in txt.splitlines() if l.strip()]
+
+
+_ITEMS = load_items()
+# 충돌 P/R/F1·오탐은 final에선 *유형* 기준(하드코딩 id 폐기):
+#   양성=문서간충돌, 음성(distractor)=동명무충돌+용도상이("충돌처럼 보이나 아님").
+CROSS_DOC_CONFLICT = {it["id"] for it in _ITEMS if it["type"] == "문서간충돌"}
+SINGLE_DOC_CONFLICT = {it["id"] for it in _ITEMS if it["type"] == "단일정밀"}
+DISTRACTOR = {it["id"] for it in _ITEMS if it["type"] in ("동명무충돌", "용도상이")}
 
 NAIVE_MODEL = "gpt-4o"        # 그래프 Reasoner와 동일 모델 → 공정
 JUDGE_MODEL = "gpt-4o-mini"
@@ -141,7 +154,7 @@ def judge_faith(ans, ctx):
 
 
 def main():
-    items = [json.loads(l) for l in GOLD.open(encoding="utf-8") if l.strip()]
+    items = load_items()
     per = []
     for it in items:
         iid = it["id"]
@@ -157,6 +170,7 @@ def main():
 
         rec = {
             "id": iid, "type": it["type"], "hop": it["hop"],
+            "answerable": it.get("answerable", True),
             "question": it["question"],
             "gold_tokens": [f"{d} {a}" for d, a in gold_tokens],
             "route": st.get("route"), "verdict": st.get("verdict"),
@@ -192,16 +206,23 @@ def _mean(xs):
 
 
 def aggregate(per):
+    # 무응답(answerable=False)은 gold가 비어 recall=1.0(공허)·정답=회피 → recall/accuracy/faith는
+    # answerable 문항만 집계(공허 inflation 차단). 회피 자체는 abstention_rate(로드맵4)로 별도 측정.
+    ans = [p for p in per if p.get("answerable", True)]
+
     def by_hop(sys_key, h):
-        return _mean(p[sys_key] for p in per if p["hop"] == h)
+        return _mean(p[sys_key] for p in ans if p["hop"] == h)
 
     cross = [p for p in per if p["id"] in CROSS_DOC_CONFLICT]
     dist = [p for p in per if p["id"] in DISTRACTOR]
     return {
         "n_items": len(per),
+        "n_answerable": len(ans),
+        "conflict_groups": {"crossdoc_pos": sorted(CROSS_DOC_CONFLICT),
+                            "distractor_neg": sorted(DISTRACTOR)},
         "context_recall": {
-            "graph_overall": _mean(p["recall_g"] for p in per),
-            "naive_overall": _mean(p["recall_n"] for p in per),
+            "graph_overall": _mean(p["recall_g"] for p in ans),
+            "naive_overall": _mean(p["recall_n"] for p in ans),
             "graph_by_hop": {h: by_hop("recall_g", h) for h in (1, 2, 3)},
             "naive_by_hop": {h: by_hop("recall_n", h) for h in (1, 2, 3)},
         },
@@ -209,23 +230,25 @@ def aggregate(per):
             "graph": {h: (round(1 - by_hop("recall_g", h), 3) if by_hop("recall_g", h) is not None else None) for h in (1, 2, 3)},
             "naive": {h: (round(1 - by_hop("recall_n", h), 3) if by_hop("recall_n", h) is not None else None) for h in (1, 2, 3)},
         },
-        "conflict_detection_crossdoc7": {
+        "conflict_detection_crossdoc": {
+            "n": len(cross),
             "graph_flag_and_judge": _mean(1.0 if (p["g_flag"] and p["jc_g"]) else 0.0 for p in cross),
             "graph_judge_only": _mean(1.0 if p["jc_g"] else 0.0 for p in cross),
             "naive_judge_only": _mean(1.0 if p["jc_n"] else 0.0 for p in cross),
         },
-        "conflict_false_alarm_distractor6": {
+        "conflict_false_alarm_distractor": {
+            "n": len(dist),
             "graph_flag": _mean(1.0 if p["g_flag"] else 0.0 for p in dist),
             "graph_judge": _mean(1.0 if p["jc_g"] else 0.0 for p in dist),
             "naive_judge": _mean(1.0 if p["jc_n"] else 0.0 for p in dist),
         },
         "answer_accuracy": {
-            "graph": _mean(p["acc_g"] for p in per),
-            "naive": _mean(p["acc_n"] for p in per),
+            "graph": _mean(p["acc_g"] for p in ans),
+            "naive": _mean(p["acc_n"] for p in ans),
         },
         "faithfulness": {
-            "graph": _mean(p["faith_g"] for p in per),
-            "naive": _mean(p["faith_n"] for p in per),
+            "graph": _mean(p["faith_g"] for p in ans),
+            "naive": _mean(p["faith_n"] for p in ans),
         },
         "verifier_accept_rate": _mean(1.0 if p["verdict"] == "ACCEPT" else 0.0 for p in per),
     }

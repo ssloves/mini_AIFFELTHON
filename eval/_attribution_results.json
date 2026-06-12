@@ -1,0 +1,1954 @@
+{
+  "per_item": [
+    {
+      "id": 1,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 17,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 2,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": true,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 4,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 3,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 11,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 4,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 8,
+      "tokens": [
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": true,
+          "graph_hit": true,
+          "graph_only": false,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 13,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 5,
+      "type": "일반",
+      "hop": 1,
+      "route": "multihop",
+      "n_seed_ctx": 3,
+      "n_graph_ctx": 9,
+      "tokens": [
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 16,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 6,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 8,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 23,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 7,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 2,
+      "n_graph_ctx": 10,
+      "tokens": [
+        {
+          "gold": "장려금지침 *",
+          "seed_hit": true,
+          "graph_hit": true,
+          "graph_only": false,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 12,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 8,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "장려금지침 *",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 12,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 9,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 7,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 10,
+      "type": "일반",
+      "hop": 1,
+      "route": "multihop",
+      "n_seed_ctx": 3,
+      "n_graph_ctx": 9,
+      "tokens": [
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 10,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 11,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 3,
+      "n_graph_ctx": 9,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 13,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 12,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "장려금지침 *",
+          "seed_hit": true,
+          "graph_hit": true,
+          "graph_only": false,
+          "missed": false
+        }
+      ],
+      "n_paths": 19,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 13,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 9,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 14,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제40조",
+          "seed_hit": true,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": false
+        }
+      ],
+      "n_paths": 9,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 15,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 0,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 0,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 16,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": true,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": false
+        }
+      ],
+      "n_paths": 4,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 17,
+      "type": "일반",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "장려금지침 *",
+          "seed_hit": true,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": false
+        }
+      ],
+      "n_paths": 8,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 18,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 8,
+      "tokens": [
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": true,
+          "graph_hit": true,
+          "graph_only": false,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 14,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 19,
+      "type": "동명무충돌",
+      "hop": 3,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "장려금지침 *",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 8,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 20,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 8,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 21,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 8,
+      "tokens": [
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 20,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 22,
+      "type": "단일정밀",
+      "hop": 2,
+      "route": "multihop",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 8,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 20,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 23,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 10,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 24,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 9,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 25,
+      "type": "용도상이",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 8,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "고용보험법시행령 제12조",
+          "seed_hit": true,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": false
+        }
+      ],
+      "n_paths": 13,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 26,
+      "type": "용도상이",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "장려금지침 *",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 9,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 27,
+      "type": "용도상이",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": true,
+          "graph_hit": true,
+          "graph_only": false,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 9,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 28,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "multihop",
+      "n_seed_ctx": 3,
+      "n_graph_ctx": 9,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 13,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 29,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "n_seed_ctx": 2,
+      "n_graph_ctx": 10,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 15,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 30,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": true,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": false
+        }
+      ],
+      "n_paths": 2,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 31,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 9,
+      "g_flag": false,
+      "g_abstain": true,
+      "n_abstain": false
+    },
+    {
+      "id": 32,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 6,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 33,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 18,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 34,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 2,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 35,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "conflict",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 8,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 12,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 36,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [],
+      "n_paths": 8,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 37,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [],
+      "n_paths": 2,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 38,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 1,
+      "tokens": [],
+      "n_paths": 1,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 39,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [],
+      "n_paths": 6,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 40,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 0,
+      "tokens": [],
+      "n_paths": 0,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 41,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [],
+      "n_paths": 9,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 42,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [],
+      "n_paths": 2,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 43,
+      "type": "무응답",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 0,
+      "tokens": [],
+      "n_paths": 0,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 44,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "multihop",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 10,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 45,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "conflict",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 8,
+      "tokens": [
+        {
+          "gold": "근기령_ 제7조의2",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        },
+        {
+          "gold": "고보령_ 제3조",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 14,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 46,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "multihop",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 9,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 47,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 10,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 48,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "장려금지침 *",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 8,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 49,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "conflict",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 8,
+      "tokens": [
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": true,
+          "graph_hit": true,
+          "graph_only": false,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 13,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 50,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "multihop",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 9,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 51,
+      "type": "문서간충돌",
+      "hop": 3,
+      "route": "multihop",
+      "n_seed_ctx": 2,
+      "n_graph_ctx": 10,
+      "tokens": [
+        {
+          "gold": "장려금지침 *",
+          "seed_hit": true,
+          "graph_hit": true,
+          "graph_only": false,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 12,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 52,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "multihop",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 8,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 53,
+      "type": "문서간충돌",
+      "hop": 1,
+      "route": "multihop",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 11,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 54,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 10,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 55,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 8,
+      "tokens": [
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 14,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 56,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 8,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제12조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 12,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 57,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 8,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 58,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "multihop",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 7,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 59,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "multihop",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 6,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 8,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 60,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 8,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 61,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "multihop",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 7,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 62,
+      "type": "동명무충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 17,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 63,
+      "type": "용도상이",
+      "hop": 2,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제12조",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        },
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": true,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": false
+        }
+      ],
+      "n_paths": 7,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 64,
+      "type": "용도상이",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 8,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제12조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 13,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 65,
+      "type": "용도상이",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 4,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제3조",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 5,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 66,
+      "type": "일반",
+      "hop": 1,
+      "route": "multihop",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 9,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 67,
+      "type": "일반",
+      "hop": 1,
+      "route": "multihop",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 9,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 68,
+      "type": "일반",
+      "hop": 1,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 17,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 69,
+      "type": "일반",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 6,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 70,
+      "type": "일반",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 6,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 71,
+      "type": "일반",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "조세특례제한법 제29조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 6,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 72,
+      "type": "일반",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "고용보험법시행령 제12조",
+          "seed_hit": true,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": false
+        }
+      ],
+      "n_paths": 4,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 73,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 8,
+      "tokens": [
+        {
+          "gold": "근로기준법시행령 제7조의2",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 16,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 74,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 5,
+      "n_graph_ctx": 7,
+      "tokens": [
+        {
+          "gold": "장려금지침 *",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 8,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 75,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "multihop",
+      "n_seed_ctx": 3,
+      "n_graph_ctx": 9,
+      "tokens": [
+        {
+          "gold": "장려금지침 *",
+          "seed_hit": true,
+          "graph_hit": true,
+          "graph_only": false,
+          "missed": false
+        },
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 10,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 76,
+      "type": "문서간충돌",
+      "hop": 2,
+      "route": "conflict",
+      "n_seed_ctx": 3,
+      "n_graph_ctx": 9,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        },
+        {
+          "gold": "장려금지침 *",
+          "seed_hit": false,
+          "graph_hit": true,
+          "graph_only": true,
+          "missed": false
+        }
+      ],
+      "n_paths": 10,
+      "g_flag": true,
+      "g_abstain": false,
+      "n_abstain": false
+    },
+    {
+      "id": 77,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": false,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": true
+        }
+      ],
+      "n_paths": 6,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": true
+    },
+    {
+      "id": 78,
+      "type": "단일정밀",
+      "hop": 1,
+      "route": "simple",
+      "n_seed_ctx": 4,
+      "n_graph_ctx": 2,
+      "tokens": [
+        {
+          "gold": "조특법시행령 제26조의8",
+          "seed_hit": true,
+          "graph_hit": false,
+          "graph_only": false,
+          "missed": false
+        }
+      ],
+      "n_paths": 3,
+      "g_flag": false,
+      "g_abstain": false,
+      "n_abstain": true
+    }
+  ],
+  "aggregate": {
+    "via_attribution_tokens": {
+      "n_gold_tokens": 120,
+      "seed_only": 9,
+      "both_seed_and_graph": 8,
+      "graph_only": 72,
+      "missed": 31,
+      "graph_only_rate": 0.6,
+      "메모": "graph_only=벡터 시드로는 못 잡고 그래프 전용 경로로만 도달한 gold → 그래프의 한계기여."
+    },
+    "conflict_confusion_crossdoc7_vs_distractor6": {
+      "TP": 25,
+      "FN": 1,
+      "FP": 14,
+      "TN": 2,
+      "precision": 0.641,
+      "recall": 0.962,
+      "f1": 0.769
+    },
+    "abstention_rate": {
+      "graph_overall": 0.013,
+      "naive_overall": 0.449,
+      "graph_conflict": 0.0,
+      "naive_conflict": 0.462
+    }
+  }
+}

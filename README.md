@@ -4,29 +4,38 @@
 > 연쇄 추론(multi-hop)과 **충돌 감지**를 통해 *근거가 추적 가능한* 법률 답변을 생성하는 GraphRAG 에이전트.
 
 **핵심 주장 (실험으로 검증)**
-> GraphRAG는 *더 똑똑한 답*이 아니라, **근거를 덜 놓치는 더 신뢰할 수 있는 답**을 낸다.
-> → 1순위 지표는 Answer Accuracy가 아니라 **Context Recall**.
+> GraphRAG는 *더 똑똑한 답*이 아니라, **근거를 덜 놓치고 올바른 경로로 도달하는 더 신뢰할 수 있는 답**을 낸다.
+> → 1순위 지표는 Answer Accuracy가 아니라 **Context Recall**과 **경로 충실도(Path Faithfulness)**.
+> **그리고 그 우위의 원천은 그래프 일반확장이 아니라 *그래프 위에서 작동하는 개념-충돌 앵커*다.**
 
 ---
 
-## 1. 한눈에 보는 결과
+## 1. 한눈에 보는 결과 (78문항 최종셋 · `eval/gold_set_final.json`)
 
-동일 청크·임베딩을 쓰는 **강화 Naive RAG**(예산 일치 + 조문 다양화)와 18문항으로 비교했다.
-(상세·재현: [`docs/exp_report.md`](docs/exp_report.md), 원자료 [`eval/_exp_results.json`](eval/_exp_results.json))
+동일 청크·임베딩을 쓰는 **강화 Naive RAG**(예산 일치 + 조문 다양화)와 **사람 전수검수 78문항**으로 비교하고,
+**5단 ablation 사다리(B0~B4)** 로 우위의 원인을 분해했다.
+(상세·재현: [`docs/exp_plan.md`](docs/exp_plan.md), 원자료 [`eval/_exp_results.json`](eval/_exp_results.json) 외)
 
 | 지표 | GraphRAG (Ours) | Naive (강화) | 차이 |
 |------|:---:|:---:|:---:|
-| **Context Recall (전체, 조 단위)** | **0.815** | 0.574 | **+0.241** |
-| **Answer Accuracy** (LLM-judge) | **0.806** | 0.450 | **+0.356** |
-| **Faithfulness** (LLM-judge) | **0.933** | 0.717 | **+0.216** |
-| Conflict Detection (cross-doc 7, flag+서술) | 0.857 | — | — |
-| Conflict 오탐률 (distractor 6) | 0.500 | 0.500 | — |
+| **Context Recall (조 단위)** | **0.683** | 0.436 | **+0.247** |
+| Context Recall (항/호 정밀, NEW) | **0.648** | 0.307 | **+0.341** |
+| **Answer Accuracy** (LLM-judge) | **0.720** | 0.447 | **+0.273** |
+| **Faithfulness** (LLM-judge) | **0.934** | 0.743 | **+0.191** |
+| **Abstention (무응답률)** | **0.013** | 0.449 | **−0.436** |
+| Conflict Detection P / R / F1 (충돌 26) | **0.641 / 0.962 / 0.769** | — | FP 14 · FN 1 |
+| Conflict 과탐 flag (distractor 16) | 0.875 | 0.750 | — |
+| Path Faithfulness (conn_precision / coincidence) | **0.984 / 0.031** | — | 우연 도달 3% |
 
-- ✅ **검증됨**: 그래프 확장이 근거 수집률을 높이고(+0.241), 그것이 답변 정확도·충실성 향상으로 이어진다.
-- ⚠️ **반증/한계**: "hop이 깊을수록 격차가 벌어진다"는 가설은 본 데이터로 **지지되지 않음**(hop3에서 격차 최소,
-  표본 2건). distractor **과잉탐지(0.5)** 는 명목/실질 충돌 미구분에서 발생 — 개선 과제.
+- ✅ **검증됨 (H1·H5·H6)**: 근거 수집률(+0.247, 항/호 정밀 +0.341)·정확도·충실도가 오르고, Naive가 45% "모름"일 때
+  Ours는 1%. 정답에 도달할 때 밟은 연결의 **98%가 전문가 정의 관계**(우연 아님).
+- 🔑 **우위의 원천 = 앵커 (귀인 분해)**: 개념-충돌 앵커의 순기여 Recall **+0.321**인 반면, *앵커 없는 일반 그래프
+  확장은 −0.088로 오히려 손해*. 즉 "GraphRAG가 좋다"가 아니라 **"이 도메인엔 개념-충돌 앵커 구조가 필요하다"**.
+  (룩업 아님: 7쌍이 78문항·held_out에 일반화 + 추론 경로에 개념브리지 7회 실사용)
+- ⚠️ **한계 (H4 실패)**: distractor **과탐 flag 0.875 (FP 14)** — 앵커가 유형을 안 가리고 발동. 최대 숙제.
+  ("hop 심화 +격차"는 78셋에서 지지 방향이나 hop3 n=8, held_out 충돌 n=8로 **잠정**.)
 
-> 모든 수치는 1회 실행 결과이며, 측정·데이터의 한계와 실패 사례는 보고서에 **전수 기록**되어 있다.
+> 모든 수치는 1회 실행 결과이며, 측정·데이터의 한계와 실패 사례는 [`docs/exp_plan.md`](docs/exp_plan.md) §8에 **전수 기록**.
 
 ---
 
@@ -72,8 +81,22 @@ mini_AIFFELTHON/
 ├── graph/                 # [Step 3] build_graph, populate_embeddings, build_embeddings,
 │                          #   build_offline_graph, verify_retrieval, audit_references, final_check + 리포트
 ├── agent/                 # [Step 4] LangGraph: graph_state, nodes, retrieval, prompts, app, run_eval
-├── eval/                  # gold_set_원본.jsonl(18), 평가메트릭_정의서, run_experiment, _exp_results
-├── docs/                  # 리포트: study.md(학습), eda_report.md(EDA), exp_report.md(실험)
+├── eval/                  # 평가 하니스 + 데이터셋 + 측정 산출물
+│   ├── gold_set_final.json        # 사람 G4 전수검수 78문항(최종 평가셋)
+│   ├── gold_set_v2.json           # 검수 전 자동확장 중간본
+│   ├── 평가메트릭_정의서.md        # 메트릭 정의서
+│   ├── build_gold_v2/final.py     # 데이터셋 빌드, dataset_gates.py(G0~G6)
+│   ├── run_experiment.py          # GraphRAG vs Naive 본 실험
+│   ├── ablation_ladder.py         # B0~B4 ablation
+│   ├── attribution_metrics.py     # 요인 귀인 분해
+│   ├── score_precision.py         # 조 vs 항/호 정밀 채점
+│   ├── score_factuality.py        # 사실성(수치근거·인용해소)
+│   ├── path_metric.py             # 경로 충실도
+│   ├── _*_results.json            # 각 측정 원자료
+│   ├── g4_review_log.md           # G4 사람검수 로그
+│   └── gold_authoring/            # 문항 작성 원자료(팀원1~4, heldout 사실카드)
+├── docs/                  # 리포트: study(학습)·eda_report(EDA)·exp_report(1차)·exp_plan(최종)
+│                          #   + 개선/개선_report(로드맵)·데이터셋_확장가이드
 ├── archive/               # 빈 스캐폴드·구버전 파일 모음
 ├── guide.md               # 전체 파이프라인 가이드라인
 ├── requirements.txt
@@ -121,16 +144,20 @@ mini_AIFFELTHON/
 
 ## 6. 평가 방법론
 
-- **평가셋**: `eval/gold_set_원본.jsonl` 18문항(충돌 12 / distractor 6, hop1=4·hop2=12·hop3=2).
+- **평가셋**: `eval/gold_set_final.json` — 사람 G4 전수검수 **78문항**, 6유형(문서간충돌 26 / 단일정밀 18 /
+  일반 10 / 동명무충돌 10 / 무응답 8 / 용도상이 6), hop1~3 · 출처(held_out 45 / generated 33).
 - **대조군**: 강화 Naive RAG — 청크 예산을 GraphRAG와 일치시키고 조문 중복 제거로 다양화, **동일 모델(gpt-4o)** 로 생성.
-- **채점 단위**: 조(條) 단위 매칭(gold `제3조제1항제2호` → `(문서, 제3조)`로 정규화). 지침은 문서 단위.
-- **지표**: Context Recall(전체/hop별) · Conflict Detection(cross-doc 7) · Conflict 오탐률(distractor 6)
-  · Answer Accuracy(judge) · Faithfulness(judge).
+- **5단 ablation(B0~B4)**: 검색→프롬프트→재시도→그래프→앵커를 하나씩 더해 **우위의 원인을 요인별로 귀인**.
+- **지표(7+)**: Context Recall(조 OLD / 항·호 NEW, hop별) · Conflict P/R/F1(결정론 flag) · 과탐율 ·
+  Answer Accuracy · Faithfulness · Abstention · **Path Faithfulness**(경로 재현·우연일치·연결정밀) · 사실성.
+- **데이터 게이트 G0~G6**(`eval/dataset_gates.py`)로 평가셋 무결성 검증, 작성 원자료는 `eval/gold_authoring/`.
 - 정의·지침: [`eval/평가메트릭_정의서.md`](eval/평가메트릭_정의서.md).
 
-**정직성 메모(요약)** — 조 단위·지침 문서 단위 매칭은 Recall을 과대평가할 수 있고(실패 사례 6번),
-충돌 문항 Recall 우위 일부는 설계상 정준쌍 주입에 기인하며, LLM-judge는 도메인 사실의 진위를 검증하지 못한다.
-전체 한계·실패 사례는 [`docs/exp_report.md`](docs/exp_report.md) §8~9에 기록.
+**정직성 메모(요약)** — (1) 조 단위 매칭은 Recall을 과대평가할 수 있어 **항/호 정밀(NEW)** 을 병기한다(두 채점기
+문서명 매핑 일원화 완료). (2) 충돌 문항 Recall 우위 일부는 설계상 정준쌍 주입에 기인 → **held_out 출처로 통제**
+(단 충돌 held_out n=8 잠정). (3) **앵커 없는 일반 그래프 확장은 net 손해**이며 우위는 앵커에 귀속된다(억지로
+"그래프 만능"으로 포장하지 않음). (4) distractor **과탐(FP 14)** 이 최대 한계. (5) LLM-judge는 도메인 진위를
+검증하지 못한다. 전체 한계·실패 사례는 [`docs/exp_plan.md`](docs/exp_plan.md) §8에 전수 기록.
 
 ---
 
@@ -171,8 +198,13 @@ python graph/populate_embeddings.py
 # 5) (Step 4) 에이전트 실행
 python agent/app.py
 
-# 6) 실험(GraphRAG vs Naive, 18문항)
-python eval/run_experiment.py     # → eval/_exp_results.json
+# 6) 실험 · 평가 (78문항 최종셋)
+python eval/run_experiment.py     # GraphRAG vs Naive   → eval/_exp_results.json
+python eval/ablation_ladder.py    # B0~B4 ablation       → eval/_ablation_results.json
+python eval/attribution_metrics.py# 요인 귀인 분해        → eval/_attribution_results.json
+python eval/score_precision.py    # 조 vs 항/호 정밀 채점 → eval/_precision_results.json
+python eval/path_metric.py        # 경로 충실도          → eval/_path_metric_results.json
+python eval/score_factuality.py   # 사실성               → eval/_factuality_results.json
 ```
 
 ---
@@ -181,9 +213,12 @@ python eval/run_experiment.py     # → eval/_exp_results.json
 
 | 문서 | 내용 |
 |------|------|
+| [`docs/exp_plan.md`](docs/exp_plan.md) | **최종 실험계획서/보고서**(78문항·ablation·7메트릭·결과분석·15분 발표 가이드) |
+| [`docs/exp_report.md`](docs/exp_report.md) | 1차 실험 보고서(18문항, 설계·결과·한계) |
 | [`docs/study.md`](docs/study.md) | GraphRAG가 무엇이고 왜 이 데이터셋에 유리한지 — 개념 중심 학습 문서 |
 | [`docs/eda_report.md`](docs/eda_report.md) | EDA 상세(문서 통계·참조 분포·충돌 희소성) |
-| [`docs/exp_report.md`](docs/exp_report.md) | 실험 보고서(설계·결과·분석·한계·실패 사례) |
+| [`docs/개선.md`](docs/개선.md) · [`docs/개선_report.md`](docs/개선_report.md) | 개선 로드맵(메트릭 정밀화·데이터 강화) 계획·진행 기록 |
+| [`docs/데이터셋_확장가이드.md`](docs/데이터셋_확장가이드.md) | 데이터셋 확장(78문항) 작성 가이드 |
 | [`data/graph_schema.md`](data/graph_schema.md) | 노드/엣지 스키마 명세 |
 | [`guide.md`](guide.md) | 전체 파이프라인 가이드라인 |
 

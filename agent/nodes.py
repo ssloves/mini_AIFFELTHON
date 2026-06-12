@@ -81,12 +81,13 @@ def retriever(state):
     out = get_retriever().retrieve(state["query"], params)
     return {
         "seeds": out["seeds"], "context": out["context"], "conflicts": out["conflicts"],
-        "expanded_via": out["expanded_via"],
+        "expanded_via": out["expanded_via"], "paths": out.get("paths", []),
         "trace": add_trace(state, "retriever",
                            seeds=[s["id"] for s in out["seeds"]],
                            context_ids=[c["id"] for c in out["context"]],
                            expanded_via=out["expanded_via"],
-                           has_conflict_edge=out["has_conflict_edge"]),
+                           has_conflict_edge=out["has_conflict_edge"],
+                           paths=out.get("paths", [])),
     }
 
 

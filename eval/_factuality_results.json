@@ -1,0 +1,293 @@
+[
+  {
+    "id": 1,
+    "type": "conflict",
+    "cited": [
+      "고보령_제3조_제1항",
+      "조특령_제26조의8_제2항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 1.0,
+    "old_faith_g": 1.0,
+    "old_faith_n": 1.0
+  },
+  {
+    "id": 2,
+    "type": "conflict",
+    "cited": [
+      "근기령_제7조의2_제3-4항",
+      "조특령_제26조의8_제1-2항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 0.8,
+    "old_faith_g": 1.0,
+    "old_faith_n": 0.8
+  },
+  {
+    "id": 3,
+    "type": "conflict",
+    "cited": [
+      "조특법_제29조의5_제2-4항",
+      "조특령_제26조의7_제4-5항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 1.0,
+    "old_faith_g": 1.0,
+    "old_faith_n": 1.0
+  },
+  {
+    "id": 4,
+    "type": "conflict",
+    "cited": [
+      "조특령_제26조의8_제5-8항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 1.0,
+    "old_faith_g": 1.0,
+    "old_faith_n": 1.0
+  },
+  {
+    "id": 5,
+    "type": "conflict",
+    "cited": [
+      "조특령_제26조의8_제1-2항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 1.0,
+    "old_faith_g": 1.0,
+    "old_faith_n": 1.0
+  },
+  {
+    "id": 6,
+    "type": "conflict",
+    "cited": [
+      "지침_p53_s119"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 0.5,
+    "old_faith_g": 1.0,
+    "old_faith_n": 0.8
+  },
+  {
+    "id": 7,
+    "type": "conflict",
+    "cited": [
+      "조특령_제26조의5_제3-6항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 1.0,
+    "old_faith_g": 1.0,
+    "old_faith_n": 1.0
+  },
+  {
+    "id": 8,
+    "type": "conflict",
+    "cited": [
+      "조특령_제26조의8_제1-2항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 0.8,
+    "old_faith_g": 1.0,
+    "old_faith_n": 1.0
+  },
+  {
+    "id": 9,
+    "type": "conflict",
+    "cited": [
+      "조특령_제26조의8_제1-2항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 1.0,
+    "old_faith_g": 1.0,
+    "old_faith_n": 0.0
+  },
+  {
+    "id": 10,
+    "type": "conflict",
+    "cited": [
+      "지침_p36_s77",
+      "조특령_제26조의8_제1-2항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 1.0,
+    "old_faith_g": 1.0,
+    "old_faith_n": 0.8
+  },
+  {
+    "id": 11,
+    "type": "conflict",
+    "cited": [
+      "근기령_제7조의2_제1-2항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 1.0,
+    "old_faith_g": 1.0,
+    "old_faith_n": 1.0
+  },
+  {
+    "id": 12,
+    "type": "conflict",
+    "cited": [],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 1.0,
+    "old_faith_g": 1.0,
+    "old_faith_n": 1.0
+  },
+  {
+    "id": 13,
+    "type": "distractor",
+    "cited": [
+      "고보령_제3조_제1-3항",
+      "조특령_제26조의8_제1-2항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 0.5,
+    "old_faith_g": 1.0,
+    "old_faith_n": 0.5
+  },
+  {
+    "id": 14,
+    "type": "distractor",
+    "cited": [],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 1.0,
+    "old_faith_g": 0.0,
+    "old_faith_n": 0.0
+  },
+  {
+    "id": 15,
+    "type": "distractor",
+    "cited": [
+      "근기령_제7조의2_제1-2항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 1.0,
+    "old_faith_g": 1.0,
+    "old_faith_n": 1.0
+  },
+  {
+    "id": 16,
+    "type": "distractor",
+    "cited": [
+      "조특령_제26조의8_제5-8항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 1.0,
+    "old_faith_g": 0.8,
+    "old_faith_n": 0.0
+  },
+  {
+    "id": 17,
+    "type": "distractor",
+    "cited": [
+      "지침_p29_s64",
+      "조특령_제26조의8_제1-2항",
+      "조특령_제26조의8_제3-4항"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 0.0,
+    "old_faith_g": 1.0,
+    "old_faith_n": 0.0
+  },
+  {
+    "id": 18,
+    "type": "distractor",
+    "cited": [
+      "지침_p143_s311"
+    ],
+    "bad_cites": [],
+    "g_numgrounding": 1.0,
+    "g_ungrounded_nums": [],
+    "g_strict_support": 1.0,
+    "n_numgrounding": 1.0,
+    "n_ungrounded_nums": [],
+    "n_strict_support": 1.0,
+    "old_faith_g": 1.0,
+    "old_faith_n": 1.0
+  }
+]

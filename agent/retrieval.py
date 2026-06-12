@@ -108,6 +108,38 @@ class Retriever:
         with self.drv.session() as s:
             return [dict(r) for r in s.run(q, ids=ids, cap=cap)]
 
+    def _path_triples(self, seed_ids: list[str], ctx_ids: list[str]) -> list[dict]:
+        """관찰가능성 전용(로드맵 5): 최종 컨텍스트가 *확정된 뒤* 시드→엣지→컨텍스트 경로를
+        node→edge→node 트리플로 복원한다. context/conflicts/score 계산을 일절 건드리지 않으므로
+        검색 결과에 영향이 없다(LIMIT 없음·사후 조회)."""
+        if not ctx_ids:
+            return []
+        sc = list(set(seed_ids) | set(ctx_ids))
+        out: list[dict] = []
+        with self.drv.session() as s:
+            for r in s.run(
+                """MATCH (a:Chunk)-[r:CONFLICTS_WITH]-(b:Chunk)
+                   WHERE a.chunk_id IN $sc AND b.chunk_id IN $ctx
+                   RETURN DISTINCT a.chunk_id AS src, b.chunk_id AS dst,
+                          r.axis AS axis, r.concept AS concept""", sc=sc, ctx=ctx_ids):
+                out.append({"src": r["src"], "edge": "CONFLICTS_WITH", "mid": None,
+                            "dst": r["dst"], "axis": r["axis"], "concept": r["concept"]})
+            for r in s.run(
+                """MATCH (c:Chunk)-[:DEFINES|MENTIONS]->(k:Concept)<-[:DEFINES]-(o:Chunk)
+                   WHERE c.chunk_id IN $seeds AND o.chunk_id IN $ctx AND o.doc <> c.doc
+                   RETURN DISTINCT c.chunk_id AS src, k.name AS mid, o.chunk_id AS dst""",
+                    seeds=seed_ids, ctx=ctx_ids):
+                out.append({"src": r["src"], "edge": "DEFINES/MENTIONS→Concept←DEFINES",
+                            "mid": f"Concept:{r['mid']}", "dst": r["dst"]})
+            for r in s.run(
+                """MATCH (c:Chunk)-[:REFERENCES]->(a:Article)-[:CONTAINS]->(o:Chunk)
+                   WHERE c.chunk_id IN $seeds AND o.chunk_id IN $ctx
+                   RETURN DISTINCT c.chunk_id AS src, a.doc AS adoc, a.number AS anum,
+                          o.chunk_id AS dst""", seeds=seed_ids, ctx=ctx_ids):
+                out.append({"src": r["src"], "edge": "REFERENCES→Article→CONTAINS",
+                            "mid": f"Article:{r['adoc']} {r['anum']}", "dst": r["dst"]})
+        return out
+
     def retrieve(self, query: str, params: dict) -> dict:
         """params: route, seed_top_k, max_hops, edge_priority, max_context_chunks."""
         k = params.get("seed_top_k", 5)
@@ -181,10 +213,13 @@ class Retriever:
             expanded_via["REFERENCES"] = len(rf)
 
         ranked = sorted(scored.values(), key=lambda x: -x["score"])[:max_ctx]
+        # 관찰가능성(로드맵 5): 확정된 컨텍스트에 대한 node→edge→node 경로 복원(점수 불변)
+        paths = self._path_triples(seed_ids, [c["id"] for c in ranked])
         return {
             "seeds": seeds,
             "context": ranked,
             "conflicts": conflicts,
             "expanded_via": expanded_via,
             "has_conflict_edge": len(conflicts) > 0,
+            "paths": paths,
         }

@@ -12,3 +12,8 @@ verify_qa_deep.py
 # 재생성 가능한 대용량 캐시 아티팩트 (git에 올리지 않음)
 data/embeddings/chunk_vectors.npy
 graph/offline_graph.pkl
+
+# 임시 작업 디렉터리 / 디버그 로그 (푸쉬 제외)
+scratch/
+eval/_path_log.json
+eval/_path_metric_runs.json
