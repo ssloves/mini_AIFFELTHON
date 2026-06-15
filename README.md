@@ -224,6 +224,6 @@ python eval/score_factuality.py   # 사실성               → eval/_factuality
 
 ---
 
-## 팀
+## 팀 (Team MultiHop)
 
-Mini AIFFELTHON 프로젝트.
+송세미 (Se Mi Song) · 이희선 (Huiseon Lee) · 황성연 (Seongyeon Hwang)
