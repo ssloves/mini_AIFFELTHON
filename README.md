@@ -1,3 +1,21 @@
+> ### 🌐 English Summary
+> A **GraphRAG evaluation framework** for Korean labor & tax law, where the same
+> term (e.g. "regular employee," "youth") is defined differently across statutes.
+> We introduce **concept-conflict anchors** to retrieve cross-statute conflicts
+> that vector search alone misses.
+>
+> **Key result:** anchors drove Context Recall **+0.321**, while plain graph
+> expansion *hurt* performance (**−0.088**) — the value came from anchoring the
+> few decisive conflict points, not from expanding the graph. We document the
+> main limitation honestly: anchor overflagging (FP 14).
+>
+> **My contribution (Se Mi Song):** evaluation design — question taxonomy,
+> integrity controls, metrics, and the ablation/attribution analysis.
+> See **[MY_CONTRIBUTION.md](./MY_CONTRIBUTION.md)**.
+>
+> *(Full documentation below is in Korean.)*
+
+---
 # Legal GraphRAG — 한국 노동·세법 연쇄 추론 시스템
 
 > 법률·시행령·행정지침 5종 사이의 논리적 관계를 **지식 그래프**로 구조화하고, 다중 문서
